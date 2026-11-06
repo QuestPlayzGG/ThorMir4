@@ -15,9 +15,9 @@
       --gold: #f6c244;
       --gold-soft: #b8903a;
       --text: #eaf1ff;
-      --blue-1: #1d46c8;
-      --blue-2: #3f7bff;
-      --card: rgba(8, 18, 42, .82);
+      --red-1: #a30f22;
+      --red-2: #e0182d;
+      --card: rgba(24, 4, 10, .82);
       --serif: "Cinzel", Georgia, "Times New Roman", serif;
     }
     * { box-sizing: border-box; }
@@ -41,8 +41,9 @@
       inset: 0;
       z-index: -1;
       background:
-        radial-gradient(ellipse at center, rgba(5, 11, 26, .10) 0%, rgba(5, 11, 26, .55) 100%),
-        url("thor-mir4-bg.jpg") center / cover no-repeat;
+        radial-gradient(ellipse 42% 75% at 50% 48%, rgba(5, 11, 26, .62) 0%, rgba(5, 11, 26, 0) 100%),
+        radial-gradient(ellipse at center, rgba(5, 11, 26, .10) 0%, rgba(5, 11, 26, .50) 100%),
+        url("moonlit-bg.jpg") center / cover no-repeat;
     }
     main {
       width: 100%;
@@ -84,14 +85,14 @@
       letter-spacing: .05em;
     }
     a.discord {
-      background: #0c1a3d;
-      color: var(--gold);
-      border: 1px solid var(--gold-soft);
+      background: linear-gradient(180deg, #c8142a, #8e0d1c);
+      color: #fff;
+      border: 1px solid #e8b04a;
     }
     a.register {
-      background: linear-gradient(180deg, var(--blue-2), var(--blue-1));
+      background: linear-gradient(180deg, var(--red-2), var(--red-1));
       color: #fff;
-      border: 1px solid #9cc4ff;
+      border: 1px solid #e8b04a;
     }
     a.btn:hover, a.btn:focus-visible { filter: brightness(1.2); outline: none; }
     a.btn:focus-visible { box-shadow: 0 0 0 3px var(--gold); }
